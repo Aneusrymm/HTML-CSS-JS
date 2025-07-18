@@ -1,0 +1,55 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Exo 2",serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2.5rem; 
+}
+:root{
+    --main-color:#6da975;
+    --second-color:#e4f6e7;
+    --yellow-color:#ffa700;
+    --yellow-alter:#ffeac2;
+    --text-color:#081035;
+    --bg-color:#fff;
+    --text-neutral:#747893;
+    --text-neutral-2:#ecedf4;
+    --text-neutral-3:#f5f6f9;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 3rem 0rem 2rem;
+}
+
+.container{
+    max-width: 1070px;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top:20px;
+    left: 0;
+    width: 100px;
+    z-index: 200;
+}
+
+.nav{
+    display: felx;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+}
