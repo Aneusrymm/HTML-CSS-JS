@@ -17,10 +17,6 @@ async function showDogImage() {
 
 showDogImage();
 
- const kotak = document.getElementById("kotak");
-  console.log(kotak.children);        // Semua anaknya (NodeList)
-  console.log(kotak.firstElementChild); // Anak pertama
-  console.log(kotak.lastElementChild);  // Anak terakhir
-  console.log(kotak.parentElement);   // Elemen induk dari kotak
+
 
 
