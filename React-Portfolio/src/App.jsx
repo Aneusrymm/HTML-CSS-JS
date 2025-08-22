@@ -111,7 +111,7 @@ function App() {
           <div className="kontak mt-32 p-10">
             <h1 className="text-4xl mb-2 font-bold text-center">Kontak</h1>
             <p className="text-base/loose mb-10 text-center opacity-50">Mari Terhubung Dengan saya.</p>
-            <form action="" className="bg-zinc-800 p-10 w-fit mx-auto rounded-md" autoComplete="off">
+            <form action="https://formsubmit.co/kuliah.binus999@gmail.com" method="POST" className="bg-zinc-800 p-10 w-fit mx-auto rounded-md" autoComplete="off">
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="font-semibold">Nama Lengkap</label>
@@ -126,7 +126,7 @@ function App() {
                   <textarea name="pesan" id="pesan" cols="45" rows="7" placeholder="Pesan..." className="border border-zinc-800 p-2 rounded-md" required></textarea>
                 </div>
                 <div>
-                  <button type="submit" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600">
+                  <button type="submit" className="bg-violet-700 w-full cusor-pointer p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600">
                     Kirim Pesan
                   </button>
                 </div>
