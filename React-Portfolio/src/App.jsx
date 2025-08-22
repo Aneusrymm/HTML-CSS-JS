@@ -115,11 +115,11 @@ function App() {
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="font-semibold">Nama Lengkap</label>
-                  <input type="text" placeholder="Nama Lengkap..." className="border border-zinc-800 p-2 rounded-md" required/>
+                  <input name="nama" type="text" placeholder="Nama Lengkap..." className="border border-zinc-800 p-2 rounded-md" required/>
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="font-semibold">Email</label>
-                  <input type="email" placeholder="Nama Email..." className="border border-zinc-800 p-2 rounded-md" required/>
+                  <input name="email" type="email" placeholder="Nama Email..." className="border border-zinc-800 p-2 rounded-md" required/>
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="font-semibold" htmlFor="pesan">Pesan</label>
