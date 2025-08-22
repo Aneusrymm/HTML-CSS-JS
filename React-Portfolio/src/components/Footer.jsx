@@ -10,6 +10,13 @@ const Footer = () => {
             <a href="#proyek">Proyek</a>
         </div>
         <div className="flex items-center gap-3">
+             <a 
+                href="https://gitlab.com/nabilfirdaus999"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="ri-gitlab-fill ri-2x"></i>
+            </a>
+
             <a 
                 href="https://github.com/Aneusrymm" 
                 target="_blank" 
