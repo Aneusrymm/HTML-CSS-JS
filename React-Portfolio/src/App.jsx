@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 gird-cols-1">
-      <div>
+      <div className="animate__animated animate__fadeInUp animate__delay-3s">
         <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
           <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy"/>
           <p>Kode yang indah datang dari ketekunan.😊</p>
@@ -26,12 +26,12 @@ function App() {
             </a>
         </div>
       </div>
-      <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto" loading="lazy"/>
+      <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-4s" loading="lazy"/>
     </div>
 
     {/* Tentang */}
-    <div className="tentang mt-32 py-10">
-      <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg">
+    <div className="tentang mt-32 py-10" id="tentang">
+      <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
         <img src={DataImage.HeroImage} alt="Tentang Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy"/>
         <p className="text-base/loose mb-10">
           Hi, perkenalkan saya Muhamad Nabil Firdaus<br></br>
@@ -61,11 +61,15 @@ function App() {
       </div>
 
       <div className="tools mt-32">
-        <h1 className="text-4xl/snug font-bold mb-4">Tools yang Saya Gunakan</h1>
-        <p className="xl:w-2/5 lg:2/4 text-base/loose opacity-50">Berikut adalah beberapa tools yang saya gunakan untuk membuat proyek-proyek saya</p>
+        <h1 className="text-4xl/snug font-bold mb-4"data-aos="fade-up" data-aos-duration="1000">
+        Tools yang Saya Gunakan
+        </h1>
+        <p className="xl:w-2/5 lg:2/4 text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        Berikut adalah beberapa tools yang saya gunakan untuk membuat proyek-proyek saya
+        </p>
         <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listTools.map(tool =>(
-           <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" key={tool.id}>
+           <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad}>
               <img src={tool.gambar} alt="Tools Image" className="w-14 bg-zinc-800 p-1 hover:bg-zinc-900"/>
               <div>
                 <h4 className="font-bold">{tool.nama}</h4>
@@ -80,14 +84,14 @@ function App() {
 
 
     {/* Project */}
-          <div className="proyek mt-32 py-10">
+          <div className="proyek mt-32 py-10" id="proyek">
             <h1 className="text-4xl font-bold mb-2 text-center">Project</h1>
-              <p className="text-base/loose opacity-50 text-center">
+              <p className="text-base/loose opacity-50 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 Berikut Adalah beberapa proyek yang telah saya kerjakan
               </p>
               <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
                 {listProyek.map(proyek => (
-                  <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md">
+                  <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md"data-aos-duration="1000" data-aos-delay={proyek.dad} data-aos="fade-up">
                     <img src={proyek.gambar} alt="Project Image" loading="lazy"/>
                     <h1 className="text2xl font-bold my-4">{proyek.nama}</h1>
                     <p className="text-base/loose mb-4">{proyek.desk}</p>
@@ -108,10 +112,14 @@ function App() {
     {/* Project */}
 
     {/* Kontak */}
-          <div className="kontak mt-32 p-10">
-            <h1 className="text-4xl mb-2 font-bold text-center">Kontak</h1>
-            <p className="text-base/loose mb-10 text-center opacity-50">Mari Terhubung Dengan saya.</p>
-            <form action="https://formsubmit.co/kuliah.binus999@gmail.com" method="POST" className="bg-zinc-800 p-10 w-fit mx-auto rounded-md" autoComplete="off">
+          <div className="kontak mt-32 sm:p-10 p-0" id="kontak">
+            <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000">
+              Kontak
+            </h1>
+            <p className="text-base/loose mb-10 text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            Mari Terhubung Dengan saya.
+            </p>
+            <form action="https://formsubmit.co/kuliah.binus999@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="font-semibold">Nama Lengkap</label>
